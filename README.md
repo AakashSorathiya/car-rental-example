@@ -1,3 +1,8 @@
+# postman api link
+
+https://www.getpostman.com/collections/97a04f69da5411863947
+
+
 # car-rental
 
 a [Sails v1](https://sailsjs.com) application
