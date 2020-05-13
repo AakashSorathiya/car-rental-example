@@ -17,8 +17,10 @@ module.exports.policies = {
   'admin/login': true,
   'admin/signup': true,
   'customer/book-car': 'isCustomerAuthenticated',
+  'customer/cancel-booking': 'isCustomerAuthenticated',
   'admin/add-car': 'isAdminAuthenticated',
   'admin/delete-car': 'isAdminAuthenticated',
+  //'*': true
 
   /***************************************************************************
   *                                                                          *

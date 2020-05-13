@@ -23,7 +23,7 @@ module.exports = {
     if(!token) {
       return exits.fail()
     }
-    console.log("-------------------->>>", token);
+    console.log("Token ------->>>", token);
     Token.create({
       token: token
     }).then(function(response) {

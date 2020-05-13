@@ -7,10 +7,10 @@ module.exports = async function(req, res, proceed) {
     return res.badRequest("Bad Request")
   }
   const decode = jwt.verify(token, 'secret');
-  const customer = await Customer.findOne({ id: decode.id.id });
+  const customer = await Customer.findOne({ id: decode.id });
   if(!customer) {
     return res.badRequest("No User Found")
   }
-  req.session.customer = customer
+  req.session.customer = customer;
   return proceed()
 }

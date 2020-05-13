@@ -1,7 +1,7 @@
 module.exports = {
 
   datastore: 'default',
-  tableName: 'tokens',
+  tableName: 'token',
 
   attributes: {
     token: {

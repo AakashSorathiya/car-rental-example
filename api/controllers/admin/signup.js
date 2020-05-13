@@ -46,7 +46,7 @@ module.exports = {
       password: await bcrypt.hash(inputs.password, 8),
       contact_num: inputs.contact_num,
     }).then(function(response) {
-      return exits.success();
+      return exits.success("New Admin Created");
     }).catch(function(err) {
       console.log(err)
       return exits.badRequest();

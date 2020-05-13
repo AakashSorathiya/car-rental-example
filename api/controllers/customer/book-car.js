@@ -31,7 +31,7 @@ module.exports = {
   fn: async function(inputs, exits) {
     Booking.create({
       carId: this.req.query.carId,
-      customersId: this.req.session.customer.id,
+      customerId: this.req.session.customer.id,
       pickup_date: inputs.pickup_date,
       return_date: inputs.return_date,
       pickup_time: inputs.pickup_time,

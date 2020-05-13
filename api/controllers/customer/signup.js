@@ -56,7 +56,7 @@ module.exports = {
       state: inputs.state,
       city: inputs.city,
     }).then(function(response) {
-      return exits.success();
+      return exits.success("New Customer Created");
     }).catch(function(err) {
       console.log(err)
       return exits.badRequest();
